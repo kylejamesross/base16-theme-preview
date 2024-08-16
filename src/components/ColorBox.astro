@@ -1,0 +1,10 @@
+---
+interface Props {
+	color: string;
+}
+
+const { color } = Astro.props;
+const backgroundColor = `#${color}`;
+---
+
+<div style={{ width: '3rem', height: '3rem', backgroundColor, border: '1px solid #000', borderRadius: '3px' }} />

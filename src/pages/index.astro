@@ -1,0 +1,13 @@
+---
+import Layout from '../layout/Layout.astro';
+import themes from '../data/themes';
+const title = "Base16 Themes"
+const description = `Discover Base16 Themes and navigate to their details`;
+---
+
+<Layout title={title} description={description}>
+{themes.map((theme) => (
+  <a href=`/${theme.slug}`>{theme.name}</a>
+  <br>
+))}
+</Layout>
