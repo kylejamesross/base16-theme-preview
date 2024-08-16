@@ -7,7 +7,7 @@ const description = `Discover Base16 Themes and navigate to their details`;
 
 <Layout title={title} description={description}>
 {themes.map((theme) => (
-  <a href=`/${theme.slug}`>{theme.name}</a>
+  <a href=`/base16-theme-preview/${theme.slug}`>{theme.name}</a>
   <br>
 ))}
 </Layout>
